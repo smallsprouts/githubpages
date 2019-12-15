@@ -227,6 +227,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-gestbook">
+          <a href="/smallsprouts.github.io/guestbook/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-guestbook"></i> <br />
+            
+            gestbook
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -356,7 +366,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.2k
+                  2.8k
                 </span>
               
 
@@ -372,7 +382,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  9
                 </span>
               
             </div>
@@ -398,12 +408,9 @@
           简介单纯的写来用作学习使用
 第一讲 计算机,计算与计算思维
 计算机包括台式机,便携机,微芯片,软件等
-
 人类具有的三大思维能力 实验思维、理论思维和计算思维;
-
 计算思维是指 蕴含在计算学科知识背后的具有贯通性和联想性的内容;
-
-学习计算思维是为思维而学习,不是为了知识而学习,不断训练,将思维转换为
+学习计算思维是为思维而学习,不是为了知识而学习,不断训练,将思维转换为能力,
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1081,6 +1088,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'pzkbrRDdnrCEs3zkhF1eOlA2-gzGzoHsz',
+        appKey: 'g59zpneF4IwXazVPzYjS1WBu',
+        placeholder: '有想要悄悄对我说的可以留言喔,如果想收到回复可以留下你的邮箱🙂',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
